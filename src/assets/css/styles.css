@@ -40,9 +40,9 @@
   --space-3: 1rem;
   --space-4: 1.5rem;
   --space-5: 2.25rem;
-  --space-6: 3.5rem;
-  --space-7: 5rem;
-  --space-8: clamp(5.5rem, 9vw, 8.5rem);
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: clamp(4rem, 6vw, 6rem);
 
   --radius-sm: 0.35rem;
   --radius-md: 0.75rem;
@@ -82,6 +82,7 @@ main {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -303,7 +304,7 @@ p {
 
 .header-inner {
   display: flex;
-  min-height: 6.25rem;
+  min-height: 5.75rem;
   gap: var(--space-5);
   align-items: center;
   justify-content: space-between;
@@ -489,9 +490,11 @@ p {
   text-underline-offset: 0.2rem;
 }
 
-.site-footer address {
-  margin-bottom: var(--space-3);
-  font-style: normal;
+.footer-service-area {
+  max-width: 18rem;
+  margin-top: var(--space-3);
+  color: #aebeb2;
+  font-size: var(--step--1);
 }
 
 .footer-links,
@@ -549,7 +552,7 @@ p {
 .hero {
   position: relative;
   display: grid;
-  min-height: min(48rem, calc(100svh - 6.25rem));
+  min-height: clamp(31rem, 67svh, 38rem);
   color: var(--color-white);
   isolation: isolate;
   place-items: center;
@@ -682,7 +685,7 @@ p {
 
 .business-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.7fr 1.1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   background: var(--color-white);
   border: 1px solid var(--color-stone-200);
   border-radius: var(--radius-lg);
@@ -696,6 +699,7 @@ p {
 
 .hours-card {
   background: var(--color-sage-100);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 }
 
 .hours-card h2 {
@@ -747,20 +751,9 @@ p {
   overflow-wrap: anywhere;
 }
 
-.map-card {
-  min-height: 25rem;
-}
-
-.map-card iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-}
-
 .page-hero {
   position: relative;
-  padding-block: clamp(5rem, 11vw, 9rem);
+  padding-block: clamp(3.25rem, 7vw, 5.5rem);
   text-align: center;
   background:
     radial-gradient(circle at 18% 15%, rgb(157 187 131 / 28%), transparent 34%),
@@ -788,11 +781,15 @@ p {
 
 .profile-image-wrap {
   position: relative;
+  aspect-ratio: 4 / 5;
 }
 
 .profile-image-wrap img {
   width: 100%;
+  height: 100%;
   border-radius: 48% 48% var(--radius-md) var(--radius-md);
+  object-fit: cover;
+  object-position: center;
 }
 
 .profile-stamp {
@@ -915,16 +912,16 @@ p {
 .service-row {
   display: grid;
   grid-template-columns: 13rem 4rem 1fr;
-  gap: var(--space-5);
+  gap: var(--space-4);
   align-items: center;
-  padding-block: var(--space-5);
+  padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-stone-200);
   scroll-margin-top: 2rem;
 }
 
 .service-row img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 9.75rem;
   border-radius: var(--radius-sm);
   object-fit: cover;
 }
@@ -1249,19 +1246,6 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .business-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .map-card {
-    grid-column: 1 / -1;
-  }
-
-  .map-card iframe {
-    min-height: 24rem;
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  }
-
   .project-gallery {
     grid-auto-rows: 12rem;
   }
@@ -1300,7 +1284,12 @@ p {
   }
 
   .hero {
-    min-height: 42rem;
+    min-height: 34rem;
+  }
+
+  .hero-content {
+    padding-top: var(--space-6);
+    padding-bottom: 7rem;
   }
 
   .hero-overlay {
@@ -1358,10 +1347,6 @@ p {
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   }
 
-  .map-card {
-    display: none;
-  }
-
   .profile-image-wrap {
     max-width: 30rem;
     margin-inline: auto;
@@ -1388,7 +1373,7 @@ p {
 
   .service-row img {
     grid-column: 1 / -1;
-    aspect-ratio: 16 / 9;
+    height: min(56vw, 18rem);
   }
 
   .project-gallery {

@@ -7,14 +7,6 @@ const site = {
   "description": "Professional residential and commercial landscaping, lawn care, hardscaping, irrigation, lighting, and tree services in the South Carolina Lowcountry.",
   "defaultImage": "/assets/social/home.jpg",
   "analyticsId": "",
-  "address": {
-    "street": "26504 Whyte Hardee Boulevard",
-    "city": "Hardeeville",
-    "state": "SC",
-    "postalCode": "29927",
-    "country": "US"
-  },
-  "mapUrl": "https://maps.app.goo.gl/2bD1zr43i5CmkfAk7",
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "About Us", "url": "/about/" },

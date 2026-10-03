@@ -95,12 +95,6 @@ socialImageAlt: Oaktree Landscaping commercial landscape project in Hilton Head 
       <h2 id="business-title">Let’s talk about your property.</h2>
       <ul class="contact-list">
         <li>
-          <span>Visit</span>
-          <a href="{{ site.mapUrl }}" data-ga-event="directions_click" data-ga-label="home">
-            {{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.postalCode }}
-          </a>
-        </li>
-        <li>
           <span>Call</span>
           <a href="tel:{{ site.phoneHref }}" data-ga-event="phone_click" data-ga-label="home">{{ site.phone }}</a>
         </li>
@@ -118,9 +112,6 @@ socialImageAlt: Oaktree Landscaping commercial landscape project in Hilton Head 
           <div><dt>{{ row[0] }}</dt><dd>{{ row[1] }}</dd></div>
         {% endfor %}
       </dl>
-    </div>
-    <div class="map-card">
-      <iframe title="Business location map" loading="lazy" src="https://www.google.com/maps?q=26504%20Whyte%20Hardee%20Boulevard%2C%20Hardeeville%2C%20SC%2029927&amp;output=embed"></iframe>
     </div>
   </div>
 </section>

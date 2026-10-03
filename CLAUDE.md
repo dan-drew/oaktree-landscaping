@@ -7,7 +7,8 @@
 - Bluffton, Beaufort, and Hardeeville coverage is integrated into the main pages and footer; do not recreate a thin Service Areas page.
 - `design/prd.md` is the original visitor-facing content reference. `design/assets/` contains the selected company, project, owner, and service imagery.
 - Do not restore the removed Blog or Pixelated Technologies references.
-- Before publishing factual content changes, verify the business name, address, phone, hours, service areas, and offered services against the Google Business Profile. Confirm testimonial names and publication permission.
+- Before publishing factual content changes, verify the business name, phone, hours, service areas, and offered services against the Google Business Profile. Confirm testimonial names and publication permission.
+- The listed business address is the owner's home. Do not publish it, link to it, embed a map for it, or add it to structured data.
 
 ## Stack and commands
 
@@ -35,7 +36,7 @@
 - All pages use the shared Nunjucks base layout for titles, descriptions, canonical URLs, Open Graph/Twitter metadata, and `LocalBusiness` JSON-LD.
 - Keep `src/sitemap.njk` and `src/robots.njk` aligned with the public site URL.
 - Configure GA4 through `analyticsId` in `src/_data/site.js`; a blank value intentionally disables analytics.
-- Preserve the existing event hooks for estimate requests, phone and email clicks, CTA clicks, directions, social links, form starts, and gallery engagement.
+- Preserve the existing event hooks for estimate requests, phone and email clicks, CTA clicks, social links, form starts, and gallery engagement.
 - `estimate_request`, `phone_click`, and `email_click` are the intended GA4 key-event candidates. The mailto flow measures intent, not confirmed email delivery.
 
 ## GitHub Pages deployment
