@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-intro">
+      <img class="footer-logo" src="/assets/images/oaktree-logo-horizontal.png" alt="Oaktree Landscaping" width="335" height="90">
+      <p>Professional landscaping shaped for the South Carolina Lowcountry.</p>
+      <a class="text-link light-link" href="tel:{{ site.phoneHref }}" data-ga-event="phone_click" data-ga-label="footer">{{ site.phone }}</a>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul class="footer-links">
+        {% for item in site.nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2>Visit</h2>
+      <address>
+        <a href="{{ site.mapUrl }}" data-ga-event="directions_click" data-ga-label="footer">
+          {{ site.address.street }}<br>
+          {{ site.address.city }}, {{ site.address.state }} {{ site.address.postalCode }}
+        </a>
+      </address>
+      <a href="mailto:{{ site.email }}" data-ga-event="email_click" data-ga-label="footer">{{ site.email }}</a>
+    </div>
+    <div>
+      <h2>Follow Oaktree Landscaping</h2>
+      <ul class="social-links">
+        {% for profile in site.social %}
+          <li>
+            <a href="{{ profile.url }}" rel="me noopener" target="_blank" aria-label="{{ profile.label }} (opens in a new tab)" title="{{ profile.label }}" data-ga-event="social_click" data-ga-label="{{ profile.label | lower }}">
+              <i class="bi bi-{{ profile.icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <p>&copy; {{ "" | currentYear }} Oaktree Landscaping. All rights reserved.</p>
+  </div>
+</footer>

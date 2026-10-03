@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Commercial",
+    "slug": "commercial",
+    "image": "city-view.jpg",
+    "summary": "Comprehensive grounds care that keeps commercial properties polished, safe, and welcoming year-round.",
+    "description": "As a reputable landscape company, we understand that the exterior appearance of a business directly reflects its professional standards and brand image. We offer a comprehensive suite of services designed to enhance curb appeal, ensure safety, and maintain aesthetic integrity year-round. Our offerings extend beyond basic mowing to include specialized services such as sustainable irrigation management, hardscape maintenance, and crucial winter weather services like snow and ice removal. By partnering with property managers and business owners, we ensure their grounds remain pristine, welcoming, and compliant with local regulations, freeing them to focus on core operational priorities while landscape professionals manage the outdoor environment."
+  },
+  {
+    "name": "Residential",
+    "slug": "residential",
+    "image": "garden-with-natural-vegetation-with-lots-trees-pool-that-creates-armonic-atmosphere.jpg",
+    "summary": "Personalized design, installation, and maintenance for outdoor spaces that feel like home.",
+    "description": "As a reputable landscape company, we help homeowners transform private outdoor spaces into personalized sanctuaries and extensions of their interior living areas. We collaborate closely with clients to design, install, and maintain beautiful, functional landscapes that meet the unique needs and lifestyles of their families. We pair routine maintenance—such as precision mowing and garden care—with bespoke enhancements, including custom patios, elegant outdoor lighting, and native plantings. Our goal is to maximize curb appeal and home value while providing a beautiful backdrop our clients can appreciate every day, without having to lift a finger."
+  },
+  {
+    "name": "Lawn Care",
+    "slug": "lawn-care",
+    "image": "pexels-luis-negron-260501657-13630739.jpg",
+    "summary": "Mowing, edging, fertilization, weed control, aeration, and overseeding for healthy turf.",
+    "description": "With Oaktree Landscaping, you get comprehensive lawn care services including mowing, edging, fertilization, weed control, aeration, and overseeding for lush, healthy turf."
+  },
+  {
+    "name": "Garden Care",
+    "slug": "garden-care",
+    "image": "worker-cutting-bush-with-hedge-shears-outdoors-closeup-gardening-tool.jpg",
+    "summary": "Expert pruning, mulching, seasonal planting, and maintenance for vibrant garden beds.",
+    "description": "Oaktree Landscaping provides expert garden maintenance, pruning, mulching, and seasonal planting to keep your garden vibrant and healthy throughout the year."
+  },
+  {
+    "name": "Hardscape",
+    "slug": "hardscape",
+    "image": "natural-grass-close-up.jpg",
+    "summary": "Patios, retaining walls, walkways, outdoor kitchens, and gathering spaces built to last.",
+    "description": "Oaktree Landscaping can design, install, and maintain patios, retaining walls, walkways, outdoor kitchens, and seating walls that bring new life and function to your outdoor spaces."
+  },
+  {
+    "name": "Lighting",
+    "slug": "lighting",
+    "image": "rooftop-sunset-city-view.jpg",
+    "summary": "Thoughtful landscape lighting for beauty, safety, and comfortable evenings outdoors.",
+    "description": "Oaktree Landscaping provides custom landscape lighting design and installation to improve beauty, safety, and nighttime functionality, turning your outdoor space into an evening oasis."
+  },
+  {
+    "name": "Irrigation",
+    "slug": "irrigation",
+    "image": "automatic-sprinkler-lawn-watering-system-sprays-water-circle-lawn-summer-day.jpg",
+    "summary": "Efficient irrigation design, installation, maintenance, and repair for Lowcountry landscapes.",
+    "description": "Oaktree Landscaping designs, installs, maintains, and repairs irrigation systems for efficient, timely watering that keeps your landscape healthy and vibrant."
+  },
+  {
+    "name": "Tree Services",
+    "slug": "tree-services",
+    "image": "asian-man-cutting-trees-using-electrical-chainsaw.jpg",
+    "summary": "Pruning, removal, stump grinding, and health maintenance for trees and large shrubs.",
+    "description": "Oaktree Landscaping prunes trees, performs tree removal, grinds or removes stumps, and provides health maintenance for mature trees and large shrubs."
+  }
+]

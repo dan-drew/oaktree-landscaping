@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+permalink: /services/
+title: Residential & Commercial Landscaping Services
+description: Explore lawn care, garden care, hardscaping, lighting, irrigation, tree services, and complete residential and commercial landscaping in the Lowcountry.
+socialImage: /assets/social/services.jpg
+socialImageAlt: Beautiful residential landscape and outdoor living space
+---
+{% set eyebrow = "Residential & Commercial" %}
+{% set heading = "Landscaping services made for Lowcountry life." %}
+{% set intro = "From everyday maintenance to transformative outdoor improvements, our team brings reliable care and thoughtful craftsmanship to every property." %}
+{% include "partials/page-hero.njk" %}
+
+<section class="section">
+  <div class="container">
+    <div class="featured-services">
+      {% for service in services %}
+        {% if loop.index <= 2 %}
+          <article class="featured-service" id="{{ service.slug }}">
+            {% if loop.index == 1 %}
+              {% image "design/assets/" ~ service.image, service.name ~ " landscaping", "", "eager", "(max-width: 45rem) 100vw, 50vw", "feature" %}
+            {% else %}
+              {% image "design/assets/" ~ service.image, service.name ~ " landscaping", "", "lazy", "(max-width: 45rem) 100vw, 50vw", "feature" %}
+            {% endif %}
+            <div>
+              <p class="eyebrow">For {{ service.name }} Properties</p>
+              <h2>{{ service.name }} Landscaping</h2>
+              <p>{{ service.description }}</p>
+              <a class="text-link" href="/contact/?service={{ service.slug }}" data-ga-event="cta_click" data-ga-label="service_{{ service.slug }}">Request a {{ service.name | lower }} estimate <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="specialties-title">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Our Specialties</p>
+        <h2 id="specialties-title">Everything your landscape needs.</h2>
+      </div>
+      <p>Choose one service or combine them into a complete plan tailored to your property.</p>
+    </div>
+    <div class="service-list">
+      {% for service in services %}
+        {% if loop.index > 2 %}
+          <article class="service-row" id="{{ service.slug }}">
+            {% image "design/assets/" ~ service.image, service.name, "", "lazy", "(max-width: 45rem) 100vw, 13rem", "card" %}
+            <div class="service-number" aria-hidden="true">0{{ loop.index - 2 }}</div>
+            <div>
+              <h3>{{ service.name }}</h3>
+              <p>{{ service.description }}</p>
+              <a class="text-link" href="/contact/?service={{ service.slug }}" data-ga-event="cta_click" data-ga-label="service_{{ service.slug }}">Ask about {{ service.name | lower }} <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section process-section" aria-labelledby="process-title">
+  <div class="container">
+    <p class="eyebrow">A Clear Process</p>
+    <h2 id="process-title">From first conversation to a landscape you’ll love.</h2>
+    <ol class="process-grid">
+      <li><span>01</span><h3>Tell us about your property</h3><p>Share your goals, challenges, location, and the services you’re considering.</p></li>
+      <li><span>02</span><h3>Walk the space together</h3><p>We assess the site, listen closely, and recommend an approach grounded in local experience.</p></li>
+      <li><span>03</span><h3>Bring the plan to life</h3><p>Our team completes the work with care, communication, and close attention to every detail.</p></li>
+    </ol>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

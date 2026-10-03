@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+permalink: /projects/
+title: Landscaping Projects in Hilton Head & the Lowcountry
+description: Explore residential and commercial landscaping projects completed by Oaktree Landscaping in Hilton Head, Sun City, Hampton Lake, and nearby communities.
+socialImage: /assets/social/projects.jpg
+socialImageAlt: Aerial view of a residential landscaping project in Sun City
+---
+{% set eyebrow = "Our Projects" %}
+{% set heading = "See what thoughtful landscaping can do." %}
+{% set intro = "A selection of residential and commercial work across Hilton Head, Sun City, Hampton Lake, and the surrounding Lowcountry." %}
+{% include "partials/page-hero.njk" %}
+
+<section class="section">
+  <div class="container project-list">
+    {% for project in projects %}
+      <article class="project-group" aria-labelledby="{{ project.slug }}-title">
+        <div class="project-heading">
+          <div>
+            <p class="eyebrow">{{ project.meta }}</p>
+            <h2 id="{{ project.slug }}-title">{{ project.title }}</h2>
+          </div>
+          {% if project.description %}<p>{{ project.description }}</p>{% endif %}
+        </div>
+        <div class="project-gallery">
+          {% for image in project.images %}
+            <button class="gallery-button{% if loop.first %} gallery-featured{% endif %}" type="button" data-lightbox-alt="{{ project.title }} landscaping project, photo {{ loop.index }}" data-lightbox-caption="{{ project.title }} · Photo {{ loop.index }} of {{ project.images | length }}" data-ga-event="gallery_open" data-ga-label="{{ project.slug }}">
+              {% image "design/assets/" ~ image, project.title ~ " landscaping project, photo " ~ loop.index, "", "lazy", "(max-width: 45rem) 50vw, 33vw", "gallery" %}
+              <span class="gallery-expand" aria-hidden="true">View larger</span>
+            </button>
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<dialog class="lightbox" id="project-lightbox" aria-labelledby="lightbox-caption">
+  <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+  <img src="" alt="Selected landscaping project">
+  <p id="lightbox-caption"></p>
+</dialog>
+
+{% include "partials/cta.njk" %}

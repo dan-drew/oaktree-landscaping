@@ -1,0 +1,85 @@
+---
+layout: layouts/base.njk
+permalink: /contact/
+title: Request a Landscaping Estimate
+description: Request a landscaping estimate from Oaktree Landscaping for a residential or commercial property in Bluffton, Beaufort, Hardeeville, or nearby Lowcountry communities.
+socialImage: /assets/social/contact.jpg
+socialImageAlt: Maintained commercial landscape by Oaktree Landscaping
+---
+{% set eyebrow = "Contact Oaktree Landscaping" %}
+{% set heading = "Tell us what you want from your landscape." %}
+{% set intro = "Share a few details about your property. We’ll open a prepared email in your mail app so you can review and send your estimate request." %}
+{% include "partials/page-hero.njk" %}
+
+<section class="section">
+  <div class="container contact-layout">
+    <div>
+      <p class="eyebrow">Request an Estimate</p>
+      <h2>Start the conversation.</h2>
+      <form class="estimate-form" id="estimate-form" action="mailto:{{ site.email }}" method="get">
+        <div class="form-grid">
+          <div class="field">
+            <label for="first-name">First Name <span>(required)</span></label>
+            <input id="first-name" name="firstName" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name <span>(required)</span></label>
+            <input id="last-name" name="lastName" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address <span>(required)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="telephone">Telephone <span>(required)</span></label>
+            <input id="telephone" name="telephone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field field-full">
+            <label for="service">Service of Interest</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              {% for service in services %}<option value="{{ service.name }}">{{ service.name }}</option>{% endfor %}
+              <option value="Not sure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="subject">Subject <span>(required)</span></label>
+            <input id="subject" name="subject" required value="Landscaping estimate request">
+          </div>
+          <div class="field field-full">
+            <label for="message">Message <span>(required)</span></label>
+            <textarea id="message" name="message" rows="7" required placeholder="Tell us about your property, goals, location, and ideal timing."></textarea>
+          </div>
+        </div>
+        <p class="form-note">Submitting opens your default email app with these details pre-populated. No information is stored on this website.</p>
+        <button class="button" type="submit">Open Estimate Request</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <noscript><p>JavaScript is off. Your mail app will still open, but some fields may not be included automatically.</p></noscript>
+      </form>
+    </div>
+    <aside class="contact-sidebar" aria-labelledby="contact-info-title">
+      <p class="eyebrow">Contact Information</p>
+      <h2 id="contact-info-title">Prefer to reach out directly?</h2>
+      <ul class="contact-list">
+        <li>
+          <span>Address</span>
+          <a href="{{ site.mapUrl }}" data-ga-event="directions_click" data-ga-label="contact">
+            {{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.postalCode }}
+          </a>
+        </li>
+        <li>
+          <span>Email</span>
+          <a href="mailto:{{ site.email }}" data-ga-event="email_click" data-ga-label="contact">{{ site.email }}</a>
+        </li>
+        <li>
+          <span>Phone</span>
+          <a href="tel:{{ site.phoneHref }}" data-ga-event="phone_click" data-ga-label="contact">{{ site.phone }}</a>
+        </li>
+      </ul>
+      <div class="sidebar-note">
+        <strong>Serving the Lowcountry</strong>
+        <p>Bluffton · Beaufort · Hardeeville and nearby communities</p>
+      </div>
+    </aside>
+  </div>
+</section>

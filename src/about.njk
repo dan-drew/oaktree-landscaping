@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+permalink: /about/
+title: About Our Lowcountry Landscaping Company
+description: Meet owner Rene Garcia and learn how Oaktree Landscaping grew from residential care in Beaufort into a trusted Lowcountry landscaping company.
+socialImage: /assets/social/about.jpg
+socialImageAlt: Rene Garcia, owner of Oaktree Landscaping
+---
+{% set eyebrow = "About Oaktree Landscaping" %}
+{% set heading = "Local roots. Lasting beauty." %}
+{% set intro = "A family-owned landscaping company built on reliability, craftsmanship, and respect for the place we call home." %}
+{% include "partials/page-hero.njk" %}
+
+<section class="section">
+  <div class="container profile-grid">
+    <div class="profile-image-wrap">
+      {% image "design/assets/rene_garcia_sq.jpg", "Rene Garcia, owner of Oaktree Landscaping", "", "eager", "(max-width: 45rem) 100vw, 40vw", "profile" %}
+      <div class="profile-stamp" aria-hidden="true">Serving the Lowcountry since 2018</div>
+    </div>
+    <div class="profile-copy">
+      <p class="eyebrow">Our Team</p>
+      <h2>Rene Garcia</h2>
+      <p class="profile-role">Owner · Oaktree Landscaping · Bluffton, SC</p>
+      <p>As the owner of Oaktree Landscaping, a commercial and residential landscaping company in Bluffton, South Carolina, my philosophy remains simple: every project is a testament to the art of superior landscaping.</p>
+      <p>Our goal is to exceed expectations not only through the beauty of the finished work, but also through exceptional service, genuine respect for our customers, and appreciation for the environment we live in. My commitment is unwavering: creating lasting beauty, one landscape at a time.</p>
+      <a class="button" href="/contact/" data-ga-event="cta_click" data-ga-label="about_owner">Work With Our Team</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="container story-grid">
+    <div class="sticky-heading">
+      <p class="eyebrow">Our History</p>
+      <h2>One truck, one yard, and a dedication to quality.</h2>
+    </div>
+    <div class="story-copy prose">
+      <p>In the heart of the South Carolina Lowcountry, Oaktree Landscaping began its journey in Beaufort with little more than one truck and a dedication to quality residential care. Founded by Rene in 2018, the company built its reputation one yard at a time.</p>
+      <p>By mastering the unique challenges of Lowcountry soil and climate, Oaktree offered personalized services that transformed residential properties into lush, sustainable sanctuaries. A hands-on approach and meticulous attention to detail quickly fostered a loyal clientele.</p>
+      <p>As that reputation flourished through word of mouth, Oaktree expanded to meet the region’s growing commercial needs—from banks and plazas to business parks. Even as projects grew more complex, the company stayed true to its founding principles of reliability and aesthetic excellence.</p>
+      <p>Today, we deliver sustainable landscape care throughout Bluffton, Beaufort, and Hardeeville, helping every green space—whether a private residence or commercial plaza—flourish in harmony with the community it serves.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Testimonials</p>
+        <h2 id="testimonials-title">Trusted by homeowners and businesses.</h2>
+      </div>
+    </div>
+    <div class="testimonial-grid">
+      {% for testimonial in testimonials %}
+        <figure class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <h3>{{ testimonial.title }}</h3>
+            <p>“{{ testimonial.quote }}”</p>
+          </blockquote>
+          <figcaption>— {{ testimonial.author }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

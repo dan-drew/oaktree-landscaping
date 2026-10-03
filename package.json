@@ -1,0 +1,25 @@
+{
+  "name": "oaktree-landscaping",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images:social": "node scripts/generate-social-images.mjs",
+    "prebuild": "pnpm run images:social",
+    "build": "eleventy",
+    "predev": "pnpm run images:social",
+    "dev": "eleventy --serve"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^7.0.0",
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.18.0"
+}

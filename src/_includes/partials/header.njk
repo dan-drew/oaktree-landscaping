@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Oaktree Landscaping home">
+      <img src="/assets/images/oaktree-logo-horizontal.png" alt="Oaktree Landscaping" width="335" height="90">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <ul>
+        {% for item in site.nav %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="button button-small" href="/contact/" data-ga-event="cta_click" data-ga-label="header_estimate">Request an Estimate</a>
+    </nav>
+  </div>
+</header>
