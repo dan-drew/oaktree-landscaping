@@ -25,7 +25,7 @@ socialImageAlt: Aerial view of a residential landscaping project in Sun City
         <div class="project-gallery">
           {% for image in project.images %}
             <button class="gallery-button{% if loop.first %} gallery-featured{% endif %}" type="button" data-lightbox-alt="{{ project.title }} landscaping project, photo {{ loop.index }}" data-lightbox-caption="{{ project.title }} · Photo {{ loop.index }} of {{ project.images | length }}" data-ga-event="gallery_open" data-ga-label="{{ project.slug }}">
-              {% image "design/assets/" ~ image, project.title ~ " landscaping project, photo " ~ loop.index, "", "lazy", "(max-width: 45rem) 50vw, 33vw", "gallery" %}
+              <img src="{{ image | optimizedImage('projects', '-thumb') }}" alt="{{ project.title }} landscaping project, photo {{ loop.index }}" loading="lazy" decoding="async">
               <span class="gallery-expand" aria-hidden="true">View larger</span>
             </button>
           {% endfor %}

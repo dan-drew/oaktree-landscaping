@@ -18,9 +18,9 @@ socialImageAlt: Beautiful residential landscape and outdoor living space
         {% if loop.index <= 2 %}
           <article class="featured-service" id="{{ service.slug }}">
             {% if loop.index == 1 %}
-              {% image "design/assets/" ~ service.image, service.name ~ " landscaping", "", "eager", "(max-width: 45rem) 100vw, 50vw", "feature" %}
+              <img src="{{ service.image | optimizedImage('services') }}" alt="{{ service.name }} landscaping" decoding="async" fetchpriority="high">
             {% else %}
-              {% image "design/assets/" ~ service.image, service.name ~ " landscaping", "", "lazy", "(max-width: 45rem) 100vw, 50vw", "feature" %}
+              <img src="{{ service.image | optimizedImage('services') }}" alt="{{ service.name }} landscaping" loading="lazy" decoding="async">
             {% endif %}
             <div>
               <p class="eyebrow">For {{ service.name }} Properties</p>
@@ -48,7 +48,7 @@ socialImageAlt: Beautiful residential landscape and outdoor living space
       {% for service in services %}
         {% if loop.index > 2 %}
           <article class="service-row" id="{{ service.slug }}">
-            {% image "design/assets/" ~ service.image, service.name, "", "lazy", "(max-width: 45rem) 100vw, 13rem", "card" %}
+            <img src="{{ service.image | optimizedImage('services') }}" alt="{{ service.name }}" loading="lazy" decoding="async">
             <div class="service-number" aria-hidden="true">0{{ loop.index - 2 }}</div>
             <div>
               <h3>{{ service.name }}</h3>

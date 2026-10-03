@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "images:social": "node scripts/generate-social-images.mjs",
-    "prebuild": "pnpm run images:social",
+    "images:check": "node scripts/check-images.mjs",
+    "images:generate": "node scripts/generate-images.mjs",
+    "prebuild": "pnpm run images:check",
     "build": "eleventy",
-    "predev": "pnpm run images:social",
+    "predev": "pnpm run images:check",
     "dev": "eleventy --serve"
   },
   "dependencies": {
@@ -15,7 +16,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-img": "^7.0.0",
     "sharp": "^0.35.5"
   },
   "engines": {

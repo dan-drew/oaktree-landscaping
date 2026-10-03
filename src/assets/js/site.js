@@ -56,13 +56,8 @@ if (lightbox) {
   document.querySelectorAll("[data-lightbox-alt]").forEach((button) => {
     button.addEventListener("click", () => {
       const thumbnail = button.querySelector("img");
-      const largestOptimizedImage = thumbnail.srcset
-        .split(",")
-        .at(-1)
-        .trim()
-        .split(" ")[0];
 
-      lightboxImage.src = largestOptimizedImage;
+      lightboxImage.src = thumbnail.src.replace("-thumb.jpg", "-full.jpg");
       lightboxImage.alt = button.dataset.lightboxAlt;
       lightboxCaption.textContent = button.dataset.lightboxCaption;
       lightbox.showModal();

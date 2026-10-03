@@ -15,7 +15,7 @@ Create a production build:
 pnpm build
 ```
 
-The build first creates metadata-free 1200×630 social-sharing cards, then Eleventy writes the generated site to `_site/`.
+The build verifies the committed optimized images, then Eleventy writes the site to `_site/`. It does not process images.
 
 ## Deployment
 
@@ -34,10 +34,22 @@ The Pages build sets `SITE_URL=https://dan-drew.github.io/oaktree-landscaping` a
 - Business, service, project, testimonial, and service-area data: `src/_data/`
 - Design system: `src/assets/css/styles.css`
 - Navigation, gallery, analytics, and mailto form behavior: `src/assets/js/site.js`
-- Source images: `design/assets/`
+- Original source images: `design/assets/`
+- Optimized runtime images: `src/assets/images/`
+- Social-sharing cards: `src/assets/social/`
 - Social icons: Bootstrap Icons, copied locally during the Eleventy build
 
 The public website has five content pages: Home, About Us, Services, Our Projects, and Contact Us. Bluffton, Beaufort, and Hardeeville coverage is integrated into Home, About, the footer, and structured data instead of being split into a thin Service Areas page.
+
+### Regenerating images
+
+Large originals in `design/assets/` are not served by the website. When an original image or an image reference in `src/_data/` changes, regenerate the committed runtime assets explicitly:
+
+```sh
+pnpm images:generate
+```
+
+This creates one optimized hero, owner, and service image; thumbnail and full-size versions of each project image; and the five metadata-free 1200×630 social cards. Review and commit the resulting files under `src/assets/images/` and `src/assets/social/`. Normal development and deployment builds never regenerate them.
 
 ## Google Analytics 4
 

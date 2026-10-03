@@ -14,7 +14,8 @@
 - Use pnpm exclusively. Do not use npm or create another lockfile.
 - The site uses Eleventy 3 with Nunjucks templates and builds from `src/` to the ignored `_site/` directory.
 - Use `pnpm dev` for local development and `pnpm build` for a production build.
-- `pnpm build` runs `scripts/generate-social-images.mjs` first, then Eleventy.
+- Normal builds verify committed optimized images and do not process images.
+- Run `pnpm images:generate` only when source images or image references change, then review and commit the generated assets.
 - Page templates live in `src/*.njk`; shared layouts and partials live in `src/_includes/`; structured content lives in `src/_data/`.
 
 ## Design and behavior
@@ -23,8 +24,11 @@
 - Keep layouts responsive and accessible. The project gallery lightbox and navigation behavior live in `src/assets/js/site.js`.
 - The contact form intentionally opens a pre-populated `mailto:` request; there is no server-side form submission.
 - Bootstrap Icons are copied and hosted locally for UI and social-profile icons.
-- Generated 1200x630 social cards are separate from Bootstrap Icons. They provide Open Graph/Twitter previews and are generated without source image metadata.
-- `@11ty/eleventy-img` generates responsive AVIF, WebP, and JPEG variants. Keep generated image output under `_site/assets/generated`.
+- Large originals remain in `design/assets/` and must not be served at runtime.
+- `scripts/generate-images.mjs` creates stable optimized JPEG assets under `src/assets/images/`: one hero, one owner portrait, one image per service, and thumbnail/full-size pairs for projects.
+- The gallery displays project thumbnails and loads the matching full-size image only when the lightbox opens.
+- Generated 1200x630 social cards under `src/assets/social/` are separate from Bootstrap Icons. They provide Open Graph/Twitter previews and are generated without source image metadata.
+- Do not reintroduce build-time format/width matrices. The intentionally simple pipeline produces 81 committed runtime images.
 
 ## SEO and analytics
 

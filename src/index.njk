@@ -7,7 +7,7 @@ socialImage: /assets/social/home.jpg
 socialImageAlt: Oaktree Landscaping commercial landscape project in Hilton Head Island
 ---
 <section class="hero">
-  {% image "design/assets/TC_03476.JPG", "Professionally maintained commercial landscape by Oaktree Landscaping", "hero-image", "eager", "100vw", "hero" %}
+  <img class="hero-image" src="/assets/images/hero.jpg" alt="Professionally maintained commercial landscape by Oaktree Landscaping" width="1800" height="1350" decoding="async" fetchpriority="high">
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <p class="eyebrow eyebrow-light">Rooted in the Lowcountry</p>
@@ -51,7 +51,7 @@ socialImageAlt: Oaktree Landscaping commercial landscape project in Hilton Head 
       {% for service in services %}
         {% if loop.index > 2 %}
           <article class="image-card">
-            {% image "design/assets/" ~ service.image, service.name, "", "lazy", "(max-width: 45rem) 100vw, (max-width: 62rem) 50vw, 33vw", "card" %}
+            <img src="{{ service.image | optimizedImage('services') }}" alt="{{ service.name }}" loading="lazy" decoding="async">
             <div class="image-card-body">
               <h3>{{ service.name }}</h3>
               <p>{{ service.summary }}</p>
