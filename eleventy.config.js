@@ -1,6 +1,9 @@
 import Image from "@11ty/eleventy-img";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({
     "design/assets/oaktree-logo-horizontal.png": "assets/images/oaktree-logo-horizontal.png"
@@ -49,6 +52,7 @@ export default function (eleventyConfig) {
   );
 
   return {
+    pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
       includes: "_includes",

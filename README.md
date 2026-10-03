@@ -17,6 +17,16 @@ pnpm build
 
 The build first creates metadata-free 1200×630 social-sharing cards, then Eleventy writes the generated site to `_site/`.
 
+## Deployment
+
+GitHub Actions publishes the site to [dan-drew.github.io/oaktree-landscaping](https://dan-drew.github.io/oaktree-landscaping/) from the `_site/` build output.
+
+- Pull requests targeting `main` run a production build without deploying.
+- Pushes to `main` build and deploy automatically.
+- Manual runs from `main` are available through the **Build and deploy** workflow.
+
+The Pages build sets `SITE_URL=https://dan-drew.github.io/oaktree-landscaping` and `PATH_PREFIX=/oaktree-landscaping/` so canonical metadata, internal links, and assets use the repository project path. Repository Pages settings must use **GitHub Actions** as the deployment source.
+
 ## Content and assets
 
 - Page templates: `src/*.njk`
@@ -31,7 +41,7 @@ The public website has five content pages: Home, About Us, Services, Our Project
 
 ## Google Analytics 4
 
-Set `analyticsId` in `src/_data/site.json` to the production GA4 measurement ID, for example `G-XXXXXXXXXX`. Leaving it blank intentionally prevents analytics scripts from loading.
+Set `analyticsId` in `src/_data/site.js` to the production GA4 measurement ID, for example `G-XXXXXXXXXX`. Leaving it blank intentionally prevents analytics scripts from loading.
 
 The site includes event hooks for:
 
@@ -50,7 +60,7 @@ After deployment, mark the appropriate events as key events in GA4 Admin. The ma
 
 ## Launch checklist
 
-1. Confirm the production domain in `src/_data/site.json`.
+1. Confirm the fallback production domain in `src/_data/site.js` and the deployed `SITE_URL` in `.github/workflows/build-deploy.yaml`.
 2. Add the production GA4 measurement ID and enable Enhanced Measurement in GA4.
 3. Build with `pnpm build` and deploy the contents of `_site/`.
 4. Submit `/sitemap.xml` in Google Search Console.

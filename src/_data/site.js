@@ -1,4 +1,4 @@
-{
+const site = {
   "name": "Oaktree Landscaping",
   "url": "https://www.oaktree-landscaping.com",
   "email": "oaktreelandscaper@gmail.com",
@@ -40,4 +40,9 @@
     ["Sat", "Closed"],
     ["Sun", "Closed"]
   ]
-}
+};
+
+export default {
+  ...site,
+  url: process.env.SITE_URL || site.url
+};
