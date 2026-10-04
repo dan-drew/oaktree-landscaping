@@ -113,7 +113,6 @@ if (estimateForm) {
       "",
       `Name: ${fullName}`,
       `Email: ${values.get("email")}`,
-      `Telephone: ${values.get("telephone")}`,
       `Service of interest: ${values.get("service") || "Not specified"}`,
       "",
       "Project details:",

@@ -2,12 +2,12 @@
 
 ## Product and content
 
-- This repository is the conversion-focused marketing site for Oaktree Landscaping. Preserve clear estimate, phone, email, and directions calls to action.
+- This repository is the conversion-focused marketing site for Oaktree Landscaping. Preserve clear estimate and email calls to action.
 - The public information architecture has five pages: Home, About Us, Services, Our Projects, and Contact Us.
 - Bluffton, Beaufort, and Hardeeville coverage is integrated into the main pages and footer; do not recreate a thin Service Areas page.
 - `design/prd.md` is the original visitor-facing content reference. `design/assets/` contains the selected company, project, owner, and service imagery.
 - Do not restore the removed Blog or Pixelated Technologies references.
-- Before publishing factual content changes, verify the business name, phone, hours, service areas, and offered services against the Google Business Profile. Confirm testimonial names and publication permission.
+- Before publishing factual content changes, verify the business name, email, hours, service areas, and offered services against the Google Business Profile. Confirm testimonial names and publication permission.
 - The listed business address is the owner's home. Do not publish it, link to it, embed a map for it, or add it to structured data.
 
 ## Stack and commands
@@ -29,7 +29,7 @@
 - `scripts/generate-images.mjs` creates stable optimized JPEG assets under `src/assets/images/`: one hero, one owner portrait, one image per service, and thumbnail/full-size pairs for projects.
 - The gallery displays project thumbnails and loads the matching full-size image only when the lightbox opens.
 - Generated 1200x630 social cards under `src/assets/social/` are separate from Bootstrap Icons. They provide Open Graph/Twitter previews and are generated without source image metadata.
-- Do not reintroduce build-time format/width matrices. The intentionally simple pipeline produces 81 committed runtime images.
+- Do not reintroduce build-time format/width matrices. The pipeline produces one hero, one owner portrait, one image per service, thumbnail/full-size pairs per project source, and five social cards.
 
 ## SEO and analytics
 
@@ -37,7 +37,7 @@
 - Keep `src/sitemap.njk` and `src/robots.njk` aligned with the public site URL.
 - Configure GA4 through `analyticsId` in `src/_data/site.js`; a blank value intentionally disables analytics.
 - Preserve the existing event hooks for estimate requests, phone and email clicks, CTA clicks, social links, form starts, and gallery engagement.
-- `estimate_request`, `phone_click`, and `email_click` are the intended GA4 key-event candidates. The mailto flow measures intent, not confirmed email delivery.
+- `estimate_request` and `email_click` are the intended GA4 key-event candidates. The mailto flow measures intent, not confirmed email delivery.
 
 ## GitHub Pages deployment
 

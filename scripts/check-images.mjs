@@ -6,6 +6,17 @@ const projects = JSON.parse(await readFile("src/_data/projects.json", "utf8"));
 const outputName = (source, suffix = "") =>
   `${path.parse(source).name}${suffix}.jpg`;
 
+for (const project of projects) {
+  project.images.forEach((image, index) => {
+    const expectedName = `${project.slug}-${index + 1}${path.extname(image)}`;
+    if (image !== expectedName) {
+      throw new Error(
+        `Project image "${image}" must be named "${expectedName}". Image 1 is the project's main image.`
+      );
+    }
+  });
+}
+
 const expectedImages = [
   "src/assets/images/hero.jpg",
   "src/assets/images/owner.jpg",

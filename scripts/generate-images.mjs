@@ -27,7 +27,7 @@ await Promise.all([
   rm(socialDirectory, { recursive: true, force: true })
 ]);
 
-await resize("TC_03476.JPG", path.join(imageDirectory, "hero.jpg"), 1800);
+await resize("park-plaza-cinemas-1.jpeg", path.join(imageDirectory, "hero.jpg"), 1800);
 await resize("rene_garcia_sq.jpg", path.join(imageDirectory, "owner.jpg"), 1000);
 
 for (const service of services) {
@@ -36,6 +36,17 @@ for (const service of services) {
     path.join(imageDirectory, "services", outputName(service.image)),
     1200
   );
+}
+
+for (const project of projects) {
+  project.images.forEach((image, index) => {
+    const expectedName = `${project.slug}-${index + 1}${path.extname(image)}`;
+    if (image !== expectedName) {
+      throw new Error(
+        `Project image "${image}" must be named "${expectedName}". Image 1 is the project's main image.`
+      );
+    }
+  });
 }
 
 const projectImages = projects.flatMap((project) => project.images);
@@ -60,11 +71,11 @@ for (const image of projectImages) {
 }
 
 const socialCards = [
-  ["TC_03476.JPG", "home.jpg"],
+  ["park-plaza-cinemas-1.jpeg", "home.jpg"],
   ["rene_garcia_sq.jpg", "about.jpg"],
   ["garden-with-natural-vegetation-with-lots-trees-pool-that-creates-armonic-atmosphere.jpg", "services.jpg"],
-  ["Debeaufain-IMG_aerial.png", "projects.jpg"],
-  ["TC_03543.JPG", "contact.jpg"]
+  ["sun-city-debeaufain-drive-1.png", "projects.jpg"],
+  ["park-plaza-cinemas-13.jpeg", "contact.jpg"]
 ];
 
 for (const [source, filename] of socialCards) {

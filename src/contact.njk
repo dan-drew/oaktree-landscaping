@@ -8,7 +8,7 @@ socialImageAlt: Maintained commercial landscape by Oaktree Landscaping
 ---
 {% set eyebrow = "Contact Oaktree Landscaping" %}
 {% set heading = "Tell us what you want from your landscape." %}
-{% set intro = "Share a few details about your property. We’ll open a prepared email in your mail app so you can review and send your estimate request." %}
+{% set intro = "Share a few details about your property." %}
 {% include "partials/page-hero.njk" %}
 
 <section class="section">
@@ -29,10 +29,6 @@ socialImageAlt: Maintained commercial landscape by Oaktree Landscaping
           <div class="field">
             <label for="email">Email Address <span>(required)</span></label>
             <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="telephone">Telephone <span>(required)</span></label>
-            <input id="telephone" name="telephone" type="tel" autocomplete="tel" required>
           </div>
           <div class="field field-full">
             <label for="service">Service of Interest</label>
@@ -58,18 +54,8 @@ socialImageAlt: Maintained commercial landscape by Oaktree Landscaping
       </form>
     </div>
     <aside class="contact-sidebar" aria-labelledby="contact-info-title">
-      <p class="eyebrow">Contact Information</p>
-      <h2 id="contact-info-title">Prefer to reach out directly?</h2>
-      <ul class="contact-list">
-        <li>
-          <span>Email</span>
-          <a href="mailto:{{ site.email }}" data-ga-event="email_click" data-ga-label="contact">{{ site.email }}</a>
-        </li>
-        <li>
-          <span>Phone</span>
-          <a href="tel:{{ site.phoneHref }}" data-ga-event="phone_click" data-ga-label="contact">{{ site.phone }}</a>
-        </li>
-      </ul>
+      <p class="eyebrow">Service Area</p>
+      <h2 id="contact-info-title">Landscaping across the Lowcountry.</h2>
       <div class="sidebar-note">
         <strong>Serving the Lowcountry</strong>
         <p>Bluffton · Beaufort · Hardeeville and nearby communities</p>

@@ -413,12 +413,19 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/TC_03476.JPG`](assets/TC_03476.JPG) | `TC 03476` |
-| [`assets/TC_03490.jpeg`](assets/TC_03490.jpeg) | `TC 03490` |
-| [`assets/TC_03529.jpeg`](assets/TC_03529.jpeg) | `TC 03529` |
-| [`assets/TC_03539.jpeg`](assets/TC_03539.jpeg) | `TC 03539` |
-| [`assets/TC_03542.JPG`](assets/TC_03542.JPG) | `TC 03542` |
-| [`assets/TC_03543.JPG`](assets/TC_03543.JPG) | `TC 03543` |
+| [`assets/park-plaza-cinemas-1.jpeg`](assets/park-plaza-cinemas-1.jpeg) | `Park Plaza Cinemas landscaping project, photo 1` |
+| [`assets/park-plaza-cinemas-2.jpeg`](assets/park-plaza-cinemas-2.jpeg) | `Park Plaza Cinemas landscaping project, photo 2` |
+| [`assets/park-plaza-cinemas-3.jpeg`](assets/park-plaza-cinemas-3.jpeg) | `Park Plaza Cinemas landscaping project, photo 3` |
+| [`assets/park-plaza-cinemas-4.jpeg`](assets/park-plaza-cinemas-4.jpeg) | `Park Plaza Cinemas landscaping project, photo 4` |
+| [`assets/park-plaza-cinemas-5.jpeg`](assets/park-plaza-cinemas-5.jpeg) | `Park Plaza Cinemas landscaping project, photo 5` |
+| [`assets/park-plaza-cinemas-6.jpeg`](assets/park-plaza-cinemas-6.jpeg) | `Park Plaza Cinemas landscaping project, photo 6` |
+| [`assets/park-plaza-cinemas-7.jpeg`](assets/park-plaza-cinemas-7.jpeg) | `Park Plaza Cinemas landscaping project, photo 7` |
+| [`assets/park-plaza-cinemas-8.jpeg`](assets/park-plaza-cinemas-8.jpeg) | `Park Plaza Cinemas landscaping project, photo 8` |
+| [`assets/park-plaza-cinemas-9.jpeg`](assets/park-plaza-cinemas-9.jpeg) | `Park Plaza Cinemas landscaping project, photo 9` |
+| [`assets/park-plaza-cinemas-10.jpeg`](assets/park-plaza-cinemas-10.jpeg) | `Park Plaza Cinemas landscaping project, photo 10` |
+| [`assets/park-plaza-cinemas-11.jpeg`](assets/park-plaza-cinemas-11.jpeg) | `Park Plaza Cinemas landscaping project, photo 11` |
+| [`assets/park-plaza-cinemas-12.jpeg`](assets/park-plaza-cinemas-12.jpeg) | `Park Plaza Cinemas landscaping project, photo 12` |
+| [`assets/park-plaza-cinemas-13.jpeg`](assets/park-plaza-cinemas-13.jpeg) | `Park Plaza Cinemas landscaping project, photo 13` |
 
 ### Project 2
 
@@ -432,10 +439,10 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/IMG_0804.jpg`](assets/IMG_0804.jpg) | `IMG 0804` |
-| [`assets/IMG_0805.jpg`](assets/IMG_0805.jpg) | `IMG 0805` |
-| [`assets/IMG_0807.jpg`](assets/IMG_0807.jpg) | `IMG 0807` |
-| [`assets/IMG_0818.jpg`](assets/IMG_0818.jpg) | `IMG 0818` |
+| [`assets/indigo-way-1.jpg`](assets/indigo-way-1.jpg) | `Indigo Way landscaping project, photo 1` |
+| [`assets/indigo-way-2.jpg`](assets/indigo-way-2.jpg) | `Indigo Way landscaping project, photo 2` |
+| [`assets/indigo-way-3.jpg`](assets/indigo-way-3.jpg) | `Indigo Way landscaping project, photo 3` |
+| [`assets/indigo-way-4.jpg`](assets/indigo-way-4.jpg) | `Indigo Way landscaping project, photo 4` |
 
 ### Project 3
 
@@ -451,14 +458,14 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/Debeaufain-IMG_aerial.png`](assets/Debeaufain-IMG_aerial.png) | `Debeaufain-IMG aerial` |
-| [`assets/Debeaufain-IMG_4291.png`](assets/Debeaufain-IMG_4291.png) | `Debeaufain-IMG 4291` |
-| [`assets/Debeaufain-IMG_6678.png`](assets/Debeaufain-IMG_6678.png) | `Debeaufain-IMG 6678` |
-| [`assets/Debeaufain-IMG_4092.png`](assets/Debeaufain-IMG_4092.png) | `Debeaufain-IMG 4092` |
-| [`assets/Debeaufain-IMG_3791.png`](assets/Debeaufain-IMG_3791.png) | `Debeaufain-IMG 3791` |
-| [`assets/Debeaufain-IMG_8527.png`](assets/Debeaufain-IMG_8527.png) | `Debeaufain-IMG 8527` |
-| [`assets/Debeaufain-IMG_7904.png`](assets/Debeaufain-IMG_7904.png) | `Debeaufain-IMG 7904` |
-| [`assets/Debeaufain-IMG_5459.png`](assets/Debeaufain-IMG_5459.png) | `Debeaufain-IMG 5459` |
+| [`assets/sun-city-debeaufain-drive-1.png`](assets/sun-city-debeaufain-drive-1.png) | `Sun City Debeaufain Drive landscaping project, photo 1` |
+| [`assets/sun-city-debeaufain-drive-2.png`](assets/sun-city-debeaufain-drive-2.png) | `Sun City Debeaufain Drive landscaping project, photo 2` |
+| [`assets/sun-city-debeaufain-drive-3.png`](assets/sun-city-debeaufain-drive-3.png) | `Sun City Debeaufain Drive landscaping project, photo 3` |
+| [`assets/sun-city-debeaufain-drive-4.png`](assets/sun-city-debeaufain-drive-4.png) | `Sun City Debeaufain Drive landscaping project, photo 4` |
+| [`assets/sun-city-debeaufain-drive-5.png`](assets/sun-city-debeaufain-drive-5.png) | `Sun City Debeaufain Drive landscaping project, photo 5` |
+| [`assets/sun-city-debeaufain-drive-6.png`](assets/sun-city-debeaufain-drive-6.png) | `Sun City Debeaufain Drive landscaping project, photo 6` |
+| [`assets/sun-city-debeaufain-drive-7.png`](assets/sun-city-debeaufain-drive-7.png) | `Sun City Debeaufain Drive landscaping project, photo 7` |
+| [`assets/sun-city-debeaufain-drive-8.png`](assets/sun-city-debeaufain-drive-8.png) | `Sun City Debeaufain Drive landscaping project, photo 8` |
 
 ### Project 4
 
@@ -472,12 +479,12 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/Plaza_IMG_2359.jpg`](assets/Plaza_IMG_2359.jpg) | `Plaza IMG 2359` |
-| [`assets/Plaza_IMG_2364.jpg`](assets/Plaza_IMG_2364.jpg) | `Plaza IMG 2364` |
-| [`assets/Plaza_IMG_2669.jpg`](assets/Plaza_IMG_2669.jpg) | `Plaza IMG 2669` |
-| [`assets/Plaza_IMG_4026.jpg`](assets/Plaza_IMG_4026.jpg) | `Plaza IMG 4026` |
-| [`assets/Plaza_IMG_4033.jpg`](assets/Plaza_IMG_4033.jpg) | `Plaza IMG 4033` |
-| [`assets/Plaza_IMG_4044.jpg`](assets/Plaza_IMG_4044.jpg) | `Plaza IMG 4044` |
+| [`assets/commercial-plaza-1.jpg`](assets/commercial-plaza-1.jpg) | `Commercial Plaza landscaping project, photo 1` |
+| [`assets/commercial-plaza-2.jpg`](assets/commercial-plaza-2.jpg) | `Commercial Plaza landscaping project, photo 2` |
+| [`assets/commercial-plaza-3.jpg`](assets/commercial-plaza-3.jpg) | `Commercial Plaza landscaping project, photo 3` |
+| [`assets/commercial-plaza-4.jpg`](assets/commercial-plaza-4.jpg) | `Commercial Plaza landscaping project, photo 4` |
+| [`assets/commercial-plaza-5.jpg`](assets/commercial-plaza-5.jpg) | `Commercial Plaza landscaping project, photo 5` |
+| [`assets/commercial-plaza-6.jpg`](assets/commercial-plaza-6.jpg) | `Commercial Plaza landscaping project, photo 6` |
 
 ### Project 5
 
@@ -493,12 +500,12 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/SunCity-001.jpg`](assets/SunCity-001.jpg) | `SunCity-001` |
-| [`assets/SunCity-002.jpg`](assets/SunCity-002.jpg) | `SunCity-002` |
-| [`assets/SunCity_1354.jpg`](assets/SunCity_1354.jpg) | `SunCity 1354` |
-| [`assets/SunCity_1353.jpg`](assets/SunCity_1353.jpg) | `SunCity 1353` |
-| [`assets/SunCity-005.jpg`](assets/SunCity-005.jpg) | `SunCity-005` |
-| [`assets/SunCity-006.jpg`](assets/SunCity-006.jpg) | `SunCity-006` |
+| [`assets/sun-city-residential-1.jpg`](assets/sun-city-residential-1.jpg) | `Sun City residential landscaping project, photo 1` |
+| [`assets/sun-city-residential-2.jpg`](assets/sun-city-residential-2.jpg) | `Sun City residential landscaping project, photo 2` |
+| [`assets/sun-city-residential-3.jpg`](assets/sun-city-residential-3.jpg) | `Sun City residential landscaping project, photo 3` |
+| [`assets/sun-city-residential-4.jpg`](assets/sun-city-residential-4.jpg) | `Sun City residential landscaping project, photo 4` |
+| [`assets/sun-city-residential-5.jpg`](assets/sun-city-residential-5.jpg) | `Sun City residential landscaping project, photo 5` |
+| [`assets/sun-city-residential-6.jpg`](assets/sun-city-residential-6.jpg) | `Sun City residential landscaping project, photo 6` |
 
 ### Project 6
 
@@ -514,9 +521,9 @@ Images:
 
 | Local image | Alternative text |
 |---|---|
-| [`assets/HamptonLake_95F061CC.jpg`](assets/HamptonLake_95F061CC.jpg) | `HamptonLake 95F061CC` |
-| [`assets/HamptonLake_7346F472.jpg`](assets/HamptonLake_7346F472.jpg) | `HamptonLake 7346F472` |
-| [`assets/HamptonLake_IMG_5152.jpg`](assets/HamptonLake_IMG_5152.jpg) | `HamptonLake IMG 5152` |
+| [`assets/hampton-lake-1.jpg`](assets/hampton-lake-1.jpg) | `Hampton Lake landscaping project, photo 1` |
+| [`assets/hampton-lake-2.jpg`](assets/hampton-lake-2.jpg) | `Hampton Lake landscaping project, photo 2` |
+| [`assets/hampton-lake-3.jpg`](assets/hampton-lake-3.jpg) | `Hampton Lake landscaping project, photo 3` |
 
 ---
 

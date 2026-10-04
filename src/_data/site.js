@@ -2,8 +2,6 @@ const site = {
   "name": "Oaktree Landscaping",
   "url": "https://www.oaktree-landscaping.com",
   "email": "oaktreelandscaper@gmail.com",
-  "phone": "(843) 227-1210",
-  "phoneHref": "+18432271210",
   "description": "Professional residential and commercial landscaping, lawn care, hardscaping, irrigation, lighting, and tree services in the South Carolina Lowcountry.",
   "defaultImage": "/assets/social/home.jpg",
   "analyticsId": "",
@@ -15,12 +13,8 @@ const site = {
     { "label": "Contact Us", "url": "/contact/" }
   ],
   "social": [
-    { "label": "Facebook", "url": "https://www.facebook.com/oaktreelandscaper", "icon": "facebook" },
-    { "label": "Instagram", "url": "https://www.instagram.com/oaktreelandscaper", "icon": "instagram" },
-    { "label": "X", "url": "https://x.com/OaktreeLndscape", "icon": "twitter-x" },
     { "label": "Google Business", "url": "https://share.google/DQWYZ0XO8H2zXA7bh", "icon": "google" },
     { "label": "Yelp", "url": "https://www.yelp.com/user_details?userid=andHa8MtqORJtmY9rHnxHg", "icon": "yelp" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/oaktree-landscaping/", "icon": "linkedin" },
     { "label": "Nextdoor", "url": "https://nextdoor.com/page/oaktree-landscaping-1/", "icon": "house-heart" }
   ],
   "hours": [

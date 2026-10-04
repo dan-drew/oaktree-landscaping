@@ -3,39 +3,39 @@
     "title": "Park Plaza Cinemas",
     "meta": "Hilton Head Island · 2026",
     "slug": "park-plaza-cinemas",
-    "images": ["TC_03476.JPG", "TC_03490.jpeg", "TC_03529.jpeg", "TC_03539.jpeg", "TC_03542.JPG", "TC_03543.JPG"]
+    "images": ["park-plaza-cinemas-1.jpeg", "park-plaza-cinemas-2.jpeg", "park-plaza-cinemas-3.jpeg", "park-plaza-cinemas-4.jpeg", "park-plaza-cinemas-5.jpeg", "park-plaza-cinemas-6.jpeg", "park-plaza-cinemas-7.jpeg", "park-plaza-cinemas-8.jpeg", "park-plaza-cinemas-9.jpeg", "park-plaza-cinemas-10.jpeg", "park-plaza-cinemas-11.jpeg", "park-plaza-cinemas-12.jpeg", "park-plaza-cinemas-13.jpeg"]
   },
   {
     "title": "Indigo Way",
     "meta": "Hilton Head · 2026",
     "slug": "indigo-way",
-    "images": ["IMG_0804.jpg", "IMG_0805.jpg", "IMG_0807.jpg", "IMG_0818.jpg"]
+    "images": ["indigo-way-1.jpg", "indigo-way-2.jpg", "indigo-way-3.jpg", "indigo-way-4.jpg"]
   },
   {
     "title": "Sun City — Debeaufain Drive",
     "meta": "Residential landscaping · 2026",
     "slug": "sun-city-debeaufain-drive",
     "description": "An exceptionally large Sun City home with gorgeous gardens, carefully maintained landscaping, additional hardscaping, water features, and irrigation for a longtime customer.",
-    "images": ["Debeaufain-IMG_aerial.png", "Debeaufain-IMG_4291.png", "Debeaufain-IMG_6678.png", "Debeaufain-IMG_4092.png", "Debeaufain-IMG_3791.png", "Debeaufain-IMG_8527.png", "Debeaufain-IMG_7904.png", "Debeaufain-IMG_5459.png"]
+    "images": ["sun-city-debeaufain-drive-1.png", "sun-city-debeaufain-drive-2.png", "sun-city-debeaufain-drive-3.png", "sun-city-debeaufain-drive-4.png", "sun-city-debeaufain-drive-5.png", "sun-city-debeaufain-drive-6.png", "sun-city-debeaufain-drive-7.png", "sun-city-debeaufain-drive-8.png"]
   },
   {
     "title": "Commercial Plaza",
     "meta": "Commercial landscaping · 2025",
     "slug": "commercial-plaza",
-    "images": ["Plaza_IMG_2359.jpg", "Plaza_IMG_2364.jpg", "Plaza_IMG_2669.jpg", "Plaza_IMG_4026.jpg", "Plaza_IMG_4033.jpg", "Plaza_IMG_4044.jpg"]
+    "images": ["commercial-plaza-1.jpg", "commercial-plaza-2.jpg", "commercial-plaza-3.jpg", "commercial-plaza-4.jpg", "commercial-plaza-5.jpg", "commercial-plaza-6.jpg"]
   },
   {
     "title": "Sun City",
     "meta": "Residential landscaping · 2025",
     "slug": "sun-city-residential",
     "description": "Residential landscape care in Sun City Hilton Head, a celebrated Lowcountry community where sea marshes meet tall pines and ancient oaks.",
-    "images": ["SunCity-001.jpg", "SunCity-002.jpg", "SunCity_1354.jpg", "SunCity_1353.jpg", "SunCity-005.jpg", "SunCity-006.jpg"]
+    "images": ["sun-city-residential-1.jpg", "sun-city-residential-2.jpg", "sun-city-residential-3.jpg", "sun-city-residential-4.jpg", "sun-city-residential-5.jpg", "sun-city-residential-6.jpg"]
   },
   {
     "title": "Hampton Lake",
     "meta": "Residential landscaping · 2025",
     "slug": "hampton-lake",
     "description": "Landscape care for a community centered around a scenic 227-acre freshwater lake near Bluffton, South Carolina.",
-    "images": ["HamptonLake_95F061CC.jpg", "HamptonLake_7346F472.jpg", "HamptonLake_IMG_5152.jpg"]
+    "images": ["hampton-lake-1.jpg", "hampton-lake-2.jpg", "hampton-lake-3.jpg"]
   }
 ]

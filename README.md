@@ -60,7 +60,6 @@ The site includes event hooks for:
 | Event | Trigger | Suggested key event |
 |---|---|---|
 | `estimate_request` | Visitor submits the mailto estimate form | Yes |
-| `phone_click` | Visitor selects a telephone link | Yes |
 | `email_click` | Visitor selects a direct email link | Yes |
 | `form_start` | Visitor first interacts with the estimate form | No |
 | `cta_click` | Visitor selects a primary call to action | No |
@@ -76,6 +75,6 @@ After deployment, mark the appropriate events as key events in GA4 Admin. The ma
 3. Build with `pnpm build` and deploy the contents of `_site/`.
 4. Submit `/sitemap.xml` in Google Search Console.
 5. Test the deployed pages with Google's Rich Results Test and PageSpeed Insights.
-6. Verify that the name, phone number, hours, and service areas match the Google Business Profile.
+6. Verify that the name, email, hours, and service areas match the Google Business Profile.
 7. Test the estimate form on desktop and mobile with the mail application used by the business.
-8. Review project image filenames and alternative text as more descriptive project details become available.
+8. Name project sources `<project-slug>-<index>.<ext>`, using index `1` for the project's main image, and keep their alternative text descriptive.
